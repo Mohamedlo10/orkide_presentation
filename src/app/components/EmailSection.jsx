@@ -50,9 +50,9 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 h-[100vh] items-end justify-center relative "
+      className="grid md:grid-cols-2 my-12 md:my-12 sn:py-24 py-16 sm:gap-4 gap-12 sm:h-[100vh] sm:px-0 px-2 sm:items-end justify-center sm:relative "
     >
-      <div className="z-10">
+      <div className="sm:z-10">
         <h5 className="text-xl font-bold text-white my-2">
         Découvrez Nos Solutions
         </h5>
@@ -110,7 +110,7 @@ Rejoignez-nous dès aujourd'hui et faites le premier pas vers une gestion scolai
                 id="subject"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
+                placeholder="Object du message"
               />
             </div>
             <div className="mb-6">
@@ -124,7 +124,7 @@ Rejoignez-nous dès aujourd'hui et faites le premier pas vers une gestion scolai
                 name="message"
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
+                placeholder="Ecrire..."
               />
             </div>
             <button

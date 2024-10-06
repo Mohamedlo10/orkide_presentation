@@ -79,17 +79,17 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="h-[100vh] py-16">
-      <div className="text-white mb-4  lg:leading-normal font-extrabold flex flex-row justify-center text-6xl items-center gap-2 py-12">
+    <section id="projects" className="sm:h-[100vh] sm:mt-0 mt-28 px-2 sm:px-0 py-16">
+      <div className="text-white mb-4  lg:leading-normal font-extrabold flex flex-row justify-center text-4xl md:text-6xl items-center gap-4 py-12">
         DEMO
       </div>
-      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12 ">
+      <ul ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-12 ">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
             initial="initial"
-            className="bg-cover h-[50vh]"
+            className="bg-cover sm:h-[50vh]"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >

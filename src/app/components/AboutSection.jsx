@@ -61,10 +61,10 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white h-[100vh]  flex items-center justify-center" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8  items-center justify-center px-4 xl:gap-16 sm:py-10 xl:px-2">
-        <Image src="/logo.svg" width={500} height={500} />
-        <div className="pt-12 md:mt-0 text-left items-center justify-center flex flex-col h-full">
+    <section className="text-white sm:h-[100vh]  flex items-center justify-center" id="about">
+      <div className="md:grid md:grid-cols-2 sm:gap-8  items-center justify-center px-4 xl:gap-16 sm:py-10 xl:px-2">
+        <Image src="/logo.svg" width={500} height={500} className="hidden md:block" />
+        <div className="sm:pt-12 md:mt-0 text-left items-center justify-center flex flex-col h-full">
           <h2 class="text-white mb-4 text-4xl sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold">À propos d'Orkide</h2>
             <p class="text-[#ADB7BE] mb-6 text-base">
               Bienvenue sur Orkide, votre solution de gestion scolaire innovante et efficace, spécialement conçue pour répondre aux besoins des établissements d'enseignement au Sénégal. Nous comprenons les défis uniques auxquels les écoles font face dans un environnement en constante évolution, et nous sommes déterminés à simplifier la gestion administrative afin que vous puissiez vous concentrer sur ce qui compte vraiment : l'éducation de vos élèves.
