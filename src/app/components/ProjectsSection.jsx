@@ -79,7 +79,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="md:h-[100vh] sm:mt-0 mt-28 px-2 sm:px-0 py-16">
+    <section id="projects" className="md:h-[100vh] md:mt-0 mt-28 px-2 md:px-0 py-16">
       <div className="text-white mb-4  lg:leading-normal font-extrabold flex flex-row justify-center text-4xl md:text-6xl items-center gap-4 py-12">
         DEMO
       </div>
@@ -89,7 +89,7 @@ const ProjectsSection = () => {
             key={index}
             variants={cardVariants}
             initial="initial"
-            className="bg-cover sm:h-[50vh]"
+            className="bg-cover md:h-[50vh]"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
